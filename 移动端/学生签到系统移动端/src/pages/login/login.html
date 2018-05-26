@@ -1,0 +1,47 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<ion-content padding>
+  <img src="assets/images/fzu.jpg" alt="">
+  <div padding-left padding-right>
+    <ion-list padding-right no-margin>
+      <ion-item no-lines></ion-item>
+      <ion-item>
+        <ion-label fixed>账号</ion-label>
+        <ion-input name="username" type="text" placeholder="学号" [(ngModel)]="username"></ion-input>
+      </ion-item>
+      <ion-item margin-top>
+        <ion-label fixed>密码</ion-label>
+        <ion-input name="password" type="password" placeholder="登录密码" [(ngModel)]="password"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>身份</ion-label>
+        <ion-select [(ngModel)]="role" interface="popover">
+          <ion-option value="0" checked="true">学生</ion-option>
+          <ion-option value="1">教师</ion-option>
+        </ion-select>
+      </ion-item>
+
+    </ion-list>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <button ion-button block color="primary" (click)="login()">登录</button>
+        </ion-col>
+        <ion-col>
+          <button ion-button block outline color="primary">注册新账号</button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col (click)="toForgotPassword()">忘记密码？</ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+</ion-content>

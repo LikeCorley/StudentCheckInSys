@@ -1,3 +1,20 @@
-page-course-table {
+.col_border
+{
+    border: 1px solid lightgray;
+    text-align: center;
+    line-height: 100px;
+    height: 100px;
+    font-size: 2px;
+}
+.col_border1
+{
+    border: 1px solid lightgray;
+    text-align: center;
+    line-height: 20px;
+    height: 20px;
+    font-size: 2px;
+}   
 
+ion-app.md [padding] .scroll-content {
+    padding: 0;
 }

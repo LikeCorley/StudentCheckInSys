@@ -13,15 +13,60 @@
 </ion-header>
 
 
-<ion-content>
-  <ion-grid style="border: 1px;">
+<ion-content >
+  <ion-grid >
     <ion-row>
-      <ion-col col-6>
-        45  
+      <ion-col class="col_border1">
+       
       </ion-col>
-      <ion-col col-6>
-          45  
-        </ion-col>
+      <ion-col class="col_border1">
+          一  
+      </ion-col>
+      <ion-col  class="col_border1">
+          二
+      </ion-col>
+      <ion-col class="col_border1">
+          三
+      </ion-col>
+      <ion-col class="col_border1">
+          四
+      </ion-col>
+      <ion-col class="col_border1">
+        五
+      </ion-col>
+      <ion-col class="col_border1">
+        六  
+      </ion-col>
+      <ion-col class="col_border1">
+        日  
+      </ion-col>
+    </ion-row>
+
+    <ion-row *ngFor="let item of list">
+      <ion-col class="col_border">
+        {{item}}
+      </ion-col>
+      <ion-col class="col_border">
+          
+      </ion-col>
+      <ion-col  class="col_border">
+          
+      </ion-col>
+      <ion-col class="col_border">
+        
+      </ion-col>
+      <ion-col class="col_border">
+          
+      </ion-col>
+      <ion-col class="col_border">
+        
+      </ion-col>
+      <ion-col class="col_border">
+          
+      </ion-col>
+      <ion-col class="col_border">
+        
+      </ion-col>
     </ion-row>
   </ion-grid>
 </ion-content>

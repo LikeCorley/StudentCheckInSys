@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {StudentCheckInOutPage} from "../student-check-in-out/student-check-in-out";
+import { UserPage } from '../user/user';
+import { CourseTablePage } from '../course-table/course-table';
 
 /**
  * Generated class for the StudentHomePage page.
@@ -17,8 +19,8 @@ import {StudentCheckInOutPage} from "../student-check-in-out/student-check-in-ou
 export class StudentHomePage {
 
   tab1Root = StudentCheckInOutPage;
-  tab2Root = StudentCheckInOutPage;
-  tab3Root = StudentCheckInOutPage;
+  tab2Root = CourseTablePage;
+  tab3Root = UserPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

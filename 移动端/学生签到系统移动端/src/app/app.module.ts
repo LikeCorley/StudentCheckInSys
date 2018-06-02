@@ -10,6 +10,8 @@ import {LoginPage} from "../pages/login/login";
 import {StudentHomePage} from "../pages/student-home/student-home";
 import {TeacherHomePage} from "../pages/teacher-home/teacher-home";
 import {StudentCheckInOutPage} from "../pages/student-check-in-out/student-check-in-out";
+import { UserPage } from '../pages/user/user';
+import { CourseTablePage } from '../pages/course-table/course-table';
 
 @NgModule({
   declarations: [
@@ -17,11 +19,15 @@ import {StudentCheckInOutPage} from "../pages/student-check-in-out/student-check
     LoginPage,
     StudentHomePage,
     TeacherHomePage,
-    StudentCheckInOutPage
+    StudentCheckInOutPage,
+    UserPage,
+    CourseTablePage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp,{
+      tabsHideOnSubPages: 'true' 
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -29,7 +35,9 @@ import {StudentCheckInOutPage} from "../pages/student-check-in-out/student-check
     LoginPage,
     StudentHomePage,
     TeacherHomePage,
-    StudentCheckInOutPage
+    StudentCheckInOutPage,
+    UserPage,
+    CourseTablePage
   ],
   providers: [
     StatusBar,

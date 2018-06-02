@@ -2,19 +2,28 @@
 {
     border: 1px solid lightgray;
     text-align: center;
-    line-height: 100px;
-    height: 100px;
+    line-height: 80px;
+    height: 80px;
     font-size: 2px;
 }
 .col_border1
 {
     border: 1px solid lightgray;
     text-align: center;
-    line-height: 20px;
-    height: 20px;
+    line-height: 30px;
+    height: 30px;
     font-size: 2px;
-}   
-
+  background-color: #f4f4f4;
+}
+.col_border2
+{
+  border: 1px solid lightgray;
+  text-align: center;
+  line-height: 80px;
+  height: 80px;
+  font-size: 2px;
+  background-color: #f4f4f4;
+}
 ion-app.md [padding] .scroll-content {
     padding: 0;
 }

@@ -13,6 +13,8 @@ import {StudentCheckInOutPage} from "../pages/student-check-in-out/student-check
 import { UserPage } from '../pages/user/user';
 import { CourseTablePage } from '../pages/course-table/course-table';
 
+import { HttpModule, JsonpModule } from '@angular/http';
+import { CheckInStatePage } from '../pages/check-in-state/check-in-state';
 @NgModule({
   declarations: [
     MyApp,
@@ -21,10 +23,13 @@ import { CourseTablePage } from '../pages/course-table/course-table';
     TeacherHomePage,
     StudentCheckInOutPage,
     UserPage,
-    CourseTablePage
+    CourseTablePage,
+    CheckInStatePage
   ],
   imports: [
     BrowserModule,
+    HttpModule, 
+    JsonpModule,
     IonicModule.forRoot(MyApp,{
       tabsHideOnSubPages: 'true' 
     })
@@ -37,7 +42,8 @@ import { CourseTablePage } from '../pages/course-table/course-table';
     TeacherHomePage,
     StudentCheckInOutPage,
     UserPage,
-    CourseTablePage
+    CourseTablePage,
+    CheckInStatePage
   ],
   providers: [
     StatusBar,

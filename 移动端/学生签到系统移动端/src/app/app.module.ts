@@ -15,6 +15,7 @@ import { CourseTablePage } from '../pages/course-table/course-table';
 
 import { HttpModule, JsonpModule } from '@angular/http';
 import { CheckInStatePage } from '../pages/check-in-state/check-in-state';
+import { AboutUsPage } from '../pages/about-us/about-us';
 @NgModule({
   declarations: [
     MyApp,
@@ -24,14 +25,17 @@ import { CheckInStatePage } from '../pages/check-in-state/check-in-state';
     StudentCheckInOutPage,
     UserPage,
     CourseTablePage,
-    CheckInStatePage
+    CheckInStatePage,
+    AboutUsPage
   ],
   imports: [
     BrowserModule,
     HttpModule, 
     JsonpModule,
     IonicModule.forRoot(MyApp,{
-      tabsHideOnSubPages: 'true' 
+      tabsHideOnSubPages: 'true',
+      backButtonText: '返回', // 配置返回按钮的文字  
+      backButtonIcon: 'arrow-dropleft-circle' // 配置返回按钮的图标  
     })
   ],
   bootstrap: [IonicApp],
@@ -43,7 +47,8 @@ import { CheckInStatePage } from '../pages/check-in-state/check-in-state';
     StudentCheckInOutPage,
     UserPage,
     CourseTablePage,
-    CheckInStatePage
+    CheckInStatePage,
+    AboutUsPage
   ],
   providers: [
     StatusBar,

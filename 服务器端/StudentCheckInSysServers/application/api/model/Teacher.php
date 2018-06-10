@@ -2,14 +2,14 @@
 /**
  * Created by PhpStorm.
  * User: Administrator
- * Date: 2018/5/6
- * Time: 20:31
+ * Date: 2018/5/26
+ * Time: 11:36
  */
 
 namespace app\api\model;
 
 
-class Product extends BaseModel
+class Teacher
 {
 
 }

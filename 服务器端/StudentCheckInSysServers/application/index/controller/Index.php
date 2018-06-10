@@ -1,5 +1,7 @@
 <?php
 namespace app\index\controller;
+header("Access-Control-Allow-Origin: * ");
+header("Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE");
 
 class Index
 {

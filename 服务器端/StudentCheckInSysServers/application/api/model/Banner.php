@@ -6,7 +6,8 @@
  * Time: 20:44
  */
 
-namespace app\api\model;
+namespace app\api\model;////        $result = Db::query(
+
 
 
 use think\Db;
@@ -17,7 +18,7 @@ class Banner extends BaseModel
     //默认class名即为表名
     //protected  $table = 'category';
      protected  $hidden = ['delete_time','update_time'];
-   // protected  $visible = ['id'];
+   // protected  $visible = ['id '];
     public function items(){
         return $this->hasMany("BannerItem",'banner_id','id');
     }
@@ -28,8 +29,7 @@ class Banner extends BaseModel
         //with 链式with 关联其他表模型
         $banner = BannerModel::with(['items','items.img'])->find($id);
         return $banner;
-////        $result = Db::query(
-////            'select * from banner_item where banner_id = ?',[$id] );
+////            'select * from banner_item .where banner_id = ?',[$id] );
 //        //find和select的数据结构不同，find只能返回一条数据，select可以返回一条或多条数据
 //
 //

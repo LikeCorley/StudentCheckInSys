@@ -23,7 +23,7 @@ return [
     'view_replace_str'  =>  [
     '__PUBLIC__'=>'/public/',
     '__ROOT__' => '/',
-    '__ADMIN__' => 'http://127.0.0.1/bick/public/static/admin',
+    '__ADMIN__' => 'http://z.cn/static/admin',
     ],
 
     

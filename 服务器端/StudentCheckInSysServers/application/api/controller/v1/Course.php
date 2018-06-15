@@ -9,6 +9,7 @@
 namespace app\api\controller\v1;
 
 header("Access-Control-Allow-Origin: * ");
+header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
 header("Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE");
 use app\api\model\Course as CourseModel;
 
@@ -53,7 +54,21 @@ class Course
        return $result;
    }
 
+    public static  function  getAllCourse(){
 
+        $result = CourseModel::getAllCourse();
+        return $result;
+    }
+
+    public static  function getAllCourseBySno(Request $request){
+
+        $sno = $request->param('studentId');
+        //$sno = 17000;
+        $result = CourseModel::getAllCourseBySno($sno);
+        return $result;
+
+
+    }
    public  static function deleteCourseByCno(Request $request){
 
         $cno = $request->param('cno');

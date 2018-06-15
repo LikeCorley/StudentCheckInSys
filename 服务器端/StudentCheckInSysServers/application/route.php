@@ -14,11 +14,28 @@ Route::get('api/:version/banner/:id','api/:version.Banner/getBanner');
 Route::get('api/:version/student/:id','api/:version.Student/getStudentIDVerify');
 Route::get('api/:version/theme','api/:version.Theme/getSimpleList');
 Route::get('api/:version/user/:jnum','api/:version.User/getUserByjnum');
-Route::any('api/:version/userRegister','api/:version.User/userRegister');
-Route::any('api/:version/userLogin','api/:version.User/userLogin');
-Route::any('api/:version/createCourse','api/:version.Course/createCourse');
-Route::any('api/:version/getCourseByTid','api/:version.Course/getCourseByTid');
-Route::any('api/:version/deleteCourseByCno','api/:version.Course/deleteCourseByCno');
+
+Route::any('api/:version/user/userRegister','api/:version.User/userRegister');
+Route::any('api/:version/user/userLogin','api/:version.User/userLogin');
+
+Route::any('api/:version/course/createCourse','api/:version.Course/createCourse');
+Route::any('api/:version/course/getCourseByTid','api/:version.Course/getCourseByTid');
+Route::any('api/:version/course/getAllCourseBySno','api/:version.Course/getAllCourseBySno');
+Route::any('api/:version/course/deleteCourseByCno','api/:version.Course/deleteCourseByCno');
+Route::any('api/:version/course/getAllCourse','api/:version.Course/getAllCourse');
+Route::any('api/:version/checkIn/createCheckIn','api/:version.CheckIn/createCheckIn');
+Route::any('api/:version/checkIn/getCheckInByTid','api/:version.CheckIn/getCheckInByTid');
+Route::any('api/:version/checkIn/changeCheckInStatus','api/:version.CheckIn/changeCheckInStatus');
+Route::any('api/:version/stuCourse/studentSC','api/:version.StuCourse/studentSC');
+Route::any('api/:version/stuCourse/getSCBySno','api/:version.StuCourse/getSCBySno');
+Route::any('api/:version/stuCourse/getSCByCno','api/:version.StuCourse/getSCByCno');
+Route::any('api/:version/stuCourse/updateSCScoreById','api/:version.StuCourse/updateSCScoreById');
+
+Route::any('api/:version/stuCheckIn/getStuCheckInBySno','api/:version.StuCheckIn/getStuCheckInBySno');
+Route::any('api/:version/stuCheckIn/updateStuCheckInBySno','api/:version.StuCheckIn/updateStuCheckInBySno');
+Route::any('api/:version/stuCheckIn/getAllStuCheckInByArriveId','api/:version.StuCheckIn/getAllStuCheckInByArriveId');
+
+
 
 
 //GET,POST,DELETE,PUT,*
